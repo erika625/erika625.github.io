@@ -16,6 +16,13 @@ header {
 	border-radius: 100%;
 	margin-right: 10px;
 }
+.follow-me > a > img {
+	height: 40px;
+	width: 40px;
+	float: left;
+	border-radius: 100%;
+	margin-right: 10px;
+}
 .follow-me > img:first-child {
 	margin-left: 0;
 }
