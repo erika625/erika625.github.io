@@ -1,5 +1,5 @@
 /* header */
-/*header {
+header {
 	width: 100%;
 	height: 50px;
 	background-color: #FFF;8}
@@ -19,7 +19,7 @@
 .follow-me > img:first-child {
 	margin-left: 0;
 }
-*/
+
 
 @import compass
 @import compass/reset
