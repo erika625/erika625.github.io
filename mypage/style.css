@@ -20,7 +20,7 @@ header {
 	margin-left: 0;
 }
 
-
+/*
 @import compass
 @import compass/reset
 =anim($duration: 280ms)
@@ -77,6 +77,8 @@ body
   &:hover
     a
       color: #EE4056
+
+*/
 
 /* topphoto */
 .topphoto{
