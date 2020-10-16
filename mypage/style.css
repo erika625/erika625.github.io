@@ -2,7 +2,8 @@
 header {
 	width: 100%;
 	height: 50px;
-	background-color: #FFF;8}
+	background-color: #FFF;
+}
 .follow-me {
 	position: absolute;
 	top: 5px;
@@ -16,88 +17,21 @@ header {
 	border-radius: 100%;
 	margin-right: 10px;
 }
-.follow-me > a > img {
-	height: 40px;
-	width: 40px;
-	float: left;
-	border-radius: 100%;
-	margin-right: 10px;
-}
 .follow-me > img:first-child {
 	margin-left: 0;
 }
-
-/*
-@import compass
-@import compass/reset
-=anim($duration: 280ms)
-  +transition(all $duration ease)
-body
-  background: #000
-.sns_box
-  position: absolute
-  overflow: hidden
-  top: 0
-  bottom: 0
-  left: 50%
-  +translateX(-50%)
-  margin: auto
-  height: 44px
-  min-width: 268px
-.sns_button
-  float: left
-  box-shadow: inset 0 0 0 2px #fff
-  border-radius: 100%
-  +anim
-  a
-    display: table-cell
-    width: 44px
-    height: 44px
-    color: #fff
-    text-align: center
-    vertical-align: middle
-    +anim
-  i
-    font-size: 20px
-    vertical-align: middle
-  &:hover
-    box-shadow: inset 0 0 0 22px #fff
-.sns_button + .sns_button
-  margin: 0 0 0 12px
-.twitter
-  &:hover
-    a
-      color: #1B95E0
-.facebook
-  &:hover
-    a
-      color: #3B5999
-.google
-  &:hover
-    a
-      color: #dd4b39
-.instagram
-  &:hover
-    a
-      color: #2b5c84
-.pocket
-  &:hover
-    a
-      color: #EE4056
-
-*/
 
 /* topphoto */
 .topphoto{
 	position: relative;
 }
 .topphoto p{
-	letter-spacing: 0.5em;
+	letter-spacing: 0.8em;
 	position: absolute;
 	color: #fff;
-	font-weight: bold;
-	font-size: 30px;
-	font-family: Quicksand, sans-serif;
+	/*font-weight: bold;*/
+	font-size: 40px;
+	font-family: Times New Roman;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
@@ -108,69 +42,81 @@ body
 	width: 100%
 }
 
-.header-under {
+/* menuボタン */
+.content {
+	vertical-align: middle;
+	text-align: center;
 	width: 100%;
 	height: 80px;
-	background-color: #FFF;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	margin-top: 50px;
+	font-size: 20px;
+	font-family: Times New Roman;
+	letter-spacing: 0.3em;
 }
-#menu {
+ul {
 	list-style: none;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+li {
+	display: inline-block;
+	padding: 0 20px;
+}
+span {
 	position: relative;
+	display: block;
+	cursor: pointer;
 }
-#menu li {
-	width: 140px;
-	height: 50px;
-	background-color: #333;
-	margin-right: 5px;
-	text-align: center;
-	line-height: 50px;
+span:before, span:after {
+	content: '';
+	position: absolute;
+	width: 0%;
+	height: 1px;
+	top: 50%;
+	margin-top: -0.5px;
+	background: #333;
 }
-#menu li a {
-	text-decoration: none;
-	color: #FFF;
-	font-weight: bold;
-	padding: 20px;
+span:before {
+	left: -2.5px;
+}
+span:after {
+	right: 2.5px;
+	background: #333;
+	transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+span:hover:before {
+	background: #333;
+	width: 100%;
+	transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+span:hover:after {
+	background: transparent;
+	width: 100%;
+	transition: 0s;
 }
 
+
 /* column */
-.left {
+.container {
+	width: 100%;
+	height: 600px;
+	background-color: #D3D3D3;
+}
+/*.container .left, .container .right {
 	width: 40%;
 	height: 300px;
 	float: left;
-	margin-top: 5%;
-	margin-left: 8%;
-	margin-bottom: 5%;
+}*/
+.left img, .right img {
+	width: 600px;
+	height: 400px;
 }
-.left img {
-	width: 100%;
-	height: 300px;
-}
-.right {
-	width: 40%;
-	height: 300px;
-	float: right;
-	margin-top: 5%;
-	margin-right: 8%;
-	margin-bottom: 5%;
-}
-.right img {
-	width: 100%;
-	height: 300px;
-}
-.clearfix::after {
+.container::after {
 	content: "";
 	display: block;
 	clear: both;
 }
-.clearfix {
-	background-color: #D3D3D3;
-}
+
 
 
 /* aside-contact */
