@@ -97,56 +97,72 @@
 /* about */
 #about {
 	height: 100vh;
-	border-top: 1px solid;
-	border-bottom: 1px solid;
+	/*border-top: 1px solid;*/
+	/*border-bottom: 1px solid;*/
+	padding-top: 100px;
 }
-#about .subtitle {
+.subtitle {
 	font-family: Times New Roman;
 	font-size: 24px;
-	letter-spacing: 0.3em;
+	letter-spacing: 0.35em;
 	text-align: center;
-	margin-top: 200px;
+	margin-top: 150px;
+	margin-bottom: 100px;
+}
+#about .detail {
+	font-family: Times New Roman;
+	font-size: 20px;
+	letter-spacing: 0.2em;
+	text-align: center;
+	line-height: 4;
+}
+#menu a {
+	color: #333;
 }
 /* -----about ここまで----- */
 
 
 
 /* column */
-#container {
+#gallery {
 	width: 100%;
 	height: 100vh;
+}
+.container {
 	display: flex;
 	align-items: center;
-	/*border-bottom: 1px solid;*/
 }
-#container .left {
+.container .left {
 	margin-left: auto;
 	margin-right: 30px;
+	overflow: hidden;
 }
-#container .right {
+.container .right {
 	margin-left: 30px;
 	margin-right: auto;
+	overflow: hidden;
 }
 .pic-left, .pic-right {
 	width: 570px;
 	height: 400px;
 	cursor: pointer;
 	transition-duration: 0.3s;
+	transform: scale(1.1);
+	filter: grayscale(100%);
 }
 .pic-left:hover, .pic-right:hover {
-	opacity: 0.6;
+	filter: grayscale(0);
 	transition-duration: 0.3s;
 }
-#container:after {
+.container:after {
 	display: block;
 	clear: both;
 }
 
 
-
 /* contact */
 #contact {
-	margin: 150px auto;
+	margin: 100px auto;
 	width: 100%;
 	height: 30vh;
 	padding-top: 20px;
@@ -155,9 +171,10 @@
 	letter-spacing: 0.35em;
 	text-align: center;
 }
-form {
+#contact form {
 	display: inline-block;
 	margin: 0 auto;
+	margin-top: 50px;
 }
 .form-input {
 	display: flex;
