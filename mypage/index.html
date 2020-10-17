@@ -5,51 +5,61 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="reset.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var setImg = '#topphoto';
+			var fadeSpeed = 1600;
+			var switchDelay = 5000;
+			$(setImg).children('img').css({opacity:'0'});
+			$(setImg + ' img:first').stop().animate({opacity:'1',zIndex:'20'},fadeSpeed);
+			setInterval(function(){
+			$(setImg + ' :first-child').animate({opacity:'0'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
+			},switchDelay);
+		});
+	</script>
+	<script src="https://kit.fontawesome.com/88e5d9c02a.js" crossorigin="anonymous"></script>
+		<script>
+		$(document).ready(function() {
+			var pagetop = $('.pagetop');
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 100) {
+						pagetop.fadeIn();
+					} else {
+						pagetop.fadeOut();
+					}
+				});
+				pagetop.click(function () {
+					$('body, html').animate({ scrollTop: 0 }, 500);
+					return false;
+				});
+			});
+	</script>
+
 </head>
 <body>
-	<header>
-		<div class="follow-me">
-			<img class="instagram" src="IMG_8142.jpg">
-			<img class="twitter" src="IMG_8144.jpg">
-			<img class="youtube" src="IMG_8143.jpg">
-		</div>
-		<div class="sns_box">
-			<div class="sns_button twitter">
-				<a href="###" title="Tweet">
-					<i class="fa fa-twitter"></i>
-				</a>
-			</div>
-			<div class="sns_button.facebook">
-				<a href="###" title="Facebook">
-					<i class="fa.fa-facebook"></i>
-				</a>
-			</div>
-			<div class="sns_button.google">
-				<a href="###" title="google+">
-					<i class="fa.fa-google-plus"></i>
-				</a>
-			</div>
-			<div class="sns_button.instagram">
-				<a href="###" title="Facebook">
-					<i class="fa.fa-instagram"></i>
-				</a>
-			</div>
-	</header>
-	<div class="topphoto">
-		<img src="IMG_7692.jpg">
+	<div id="header"></div>
+	<div id="topphoto">
+		<img src="IMG_6165.jpeg" width="1200" height="400">
+		<img src="IMG_6144.jpeg" width="1200" height="400">
+		<img src="DSC04664.jpeg" width="1200" height="400">
+	</div>
+	<div id="topphoto-title">
 		<p>PHOTO GALLERY</p>
 	</div>
-	<div class="menu">
-		<div class="content">
-			<ul>
-				<li><span>Home</span></li>
-				<li><span>About</span></li>
-				<li><span>Blog</span></li>
-				<li><span>Contact</span></li>
-			</ul>
-		</div>
+	<div id="menu">
+		<ul>
+			<li><span>Home</span></li>
+			<li><span>About</span></li>
+			<li><span>Blog</span></li>
+			<li><span>Contact</span></li>
+		</ul>
 	</div>
-	<div class="container">
+	<div id="about">
+		<h3 class="subtitle">” Shape your awesome memories. ”</h3>
+	</div>
+	<div id="container">
 			<div class="left">
 				<img class="pic-left" src="IMG_3749.jpg">
 			</div>
@@ -57,8 +67,8 @@
 				<img class="pic-right" src="IMG_3750.jpg">
 			</div>
 	</div>
-	<aside class="contact">
-		<p>contact us</p>
+	<div id="contact">
+		<h4>- contact us -</h4>
 			<form>
 				<div class="form-input">
 					<div class="form-left">
@@ -71,8 +81,17 @@
 				</div>
 				<button type="submit" class="button">submit</button>
 			</form>
-	</aside>
-	<div class="footer">
+	</div>
+	<div id="sns">
+		<a href="https://www.instagram.com/i__erika/?hl=ja"><i class="fab fa-instagram icon"></i></a>
+		<a href="https://twitter.com/biii_81"><i class="fab fa-twitter icon"></i></a>
+		<a href="https://www.facebook.com/erika.hirata.142"><i class="fab fa-facebook icon"></i></a>
+		<a href="https://www.youtube.com/channel/UCgy1mxPcdm6d-NvUfmYrDWw"><i class="fab fa-youtube icon"></i></a>
+	</div>
+	<div id="arrow">
+		<p class="pagetop"><a href="#wrap"><i class="fas fa-angle-double-up"></i></a></p>
+	</div>
+	<div id="footer">
 			<p>©︎Copyright 2020 Bieber All rights reserved.</p>
 	</div>
 	</div>

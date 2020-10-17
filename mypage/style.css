@@ -1,73 +1,69 @@
 /* header */
-header {
+#header {
 	width: 100%;
 	height: 50px;
 	background-color: #FFF;
 }
-.follow-me {
-	position: absolute;
-	top: 5px;
-	right: 10px;
-	background-color: #fff;
-}
-.follow-me > img {
-	height: 40px;
-	width: 40px;
-	float: left;
-	border-radius: 100%;
-	margin-right: 10px;
-}
-.follow-me > img:first-child {
-	margin-left: 0;
-}
+/* ----header ここまで---- */
+
+
 
 /* topphoto */
-.topphoto{
-	position: relative;
+#topphoto{
+    width: 1200px;
+    height: 80vh;
+    margin: 0 auto;
+    text-align: left;
+    overflow: hidden;
+    position: relative;
 }
-.topphoto p{
+#topphoto img{
+    position: absolute;
+	width: 1200px;
+	height: 80vh;
+}
+#topphoto-title p {
 	letter-spacing: 0.8em;
 	position: absolute;
 	color: #fff;
-	/*font-weight: bold;*/
 	font-size: 40px;
 	font-family: Times New Roman;
-	top: 50%;
+	top: 48%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 	margin: 0;
 	padding: 0;
 }
-.topphoto img{
-	width: 100%
-}
+/* -----topphoto ここまで-----*/
 
-/* menuボタン */
-.content {
+
+
+/* menu */
+#menu {
 	vertical-align: middle;
 	text-align: center;
 	width: 100%;
 	height: 80px;
 	margin-top: 50px;
-	font-size: 20px;
+	font-size: 22px;
 	font-family: Times New Roman;
 	letter-spacing: 0.3em;
 }
-ul {
+#menu ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
-li {
+#menu ul li {
 	display: inline-block;
-	padding: 0 20px;
+	padding: 0 30px;
 }
-span {
+#menu span {
 	position: relative;
 	display: block;
 	cursor: pointer;
 }
-span:before, span:after {
+#menu span:before, #menu span:after {
 	content: '';
 	position: absolute;
 	width: 0%;
@@ -76,119 +72,213 @@ span:before, span:after {
 	margin-top: -0.5px;
 	background: #333;
 }
-span:before {
+#menu span:before {
 	left: -2.5px;
 }
-span:after {
+#menu span:after {
 	right: 2.5px;
 	background: #333;
 	transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
-span:hover:before {
+#menu span:hover:before {
 	background: #333;
 	width: 100%;
 	transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
-span:hover:after {
+#menu span:hover:after {
 	background: transparent;
 	width: 100%;
 	transition: 0s;
 }
+/* -----menu ここまで---- */
+
+
+
+/* about */
+#about {
+	height: 100vh;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+}
+#about .subtitle {
+	font-family: Times New Roman;
+	font-size: 24px;
+	letter-spacing: 0.3em;
+	text-align: center;
+	margin-top: 200px;
+}
+/* -----about ここまで----- */
+
 
 
 /* column */
-.container {
+#container {
 	width: 100%;
-	height: 600px;
-	background-color: #D3D3D3;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	/*border-bottom: 1px solid;*/
 }
-/*.container .left, .container .right {
-	width: 40%;
-	height: 300px;
-	float: left;
-}*/
-.left img, .right img {
-	width: 600px;
+#container .left {
+	margin-left: auto;
+	margin-right: 30px;
+}
+#container .right {
+	margin-left: 30px;
+	margin-right: auto;
+}
+.pic-left, .pic-right {
+	width: 570px;
 	height: 400px;
+	cursor: pointer;
+	transition-duration: 0.3s;
 }
-.container::after {
-	content: "";
+.pic-left:hover, .pic-right:hover {
+	opacity: 0.6;
+	transition-duration: 0.3s;
+}
+#container:after {
 	display: block;
 	clear: both;
 }
 
 
 
-/* aside-contact */
-
+/* contact */
+#contact {
+	margin: 150px auto;
+	width: 100%;
+	height: 30vh;
+	padding-top: 20px;
+	font-size: 22px;
+	font-family: Times New Roman;
+	letter-spacing: 0.35em;
+	text-align: center;
+}
 form {
 	display: inline-block;
 	margin: 0 auto;
 }
-.contact {
-	margin: 100px auto;
-	width: 100%;
-	height: 200px;
-	background-color: #d1d1d1;
-	padding-top: 20px;
-	font-size: 20px;
-	text-align: center;
-}
 .form-input {
 	display: flex;
-	margin-top: 20px;
-	margin-bottom: 10px;
+	margin-top: 40px;
+	margin-bottom: 30px;
 }
 .form-left {
-	height: 100px;
+	height: 120px;
 	width: 240px;
 	margin-right: 10px;
 }
 .input-field1 {
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	width: 240px;
-	height: 40px;
+	height: 50px;
 	line-height: 40px;
 	box-sizing: border-box;
+	padding-left: 0.5em;
 }
 .form-right {
-	height: 100px;
+	height: 120px;
 	width: 240px;
 	margin-left: 10px;
 }
 .input-field2 {
 	margin-bottom: 10px;
-	width: 240px;
-	height: 90px;
+	width: 260px;
+	height: 120px;
 	line-height: 40px;
 	box-sizing: border-box;
+	padding-left: 0.5em;
 }
 .button {
-	background-color: rgba(80,150,220,.5);
+	background-color: rgba(12, 32, 38,0.50);
 	color: #fff;
-	font-size: 20px;
+	font-size: 18px;
+	font-family: Times New Roman;
+	letter-spacing: 0.1em;
 	width: 120px;
+	height: 35px;
 	text-align: center;
 	border-radius: 5px;
-	border: 3px solid rgba(80,150,220,.1);
+	border: 1px solid rgba(12, 32, 38, 0.35);
 	cursor: pointer;
 }
 .button:hover {
-	background-color: rgb(80,150,220);
+	background-color: rgba(6, 12, 14);
 }
+/* -----contact ここまで----*/
+
+
+
+
+/* sns */
+#sns {
+	text-align: center;
+	letter-spacing: 10px;
+	margin-top: 200px;
+	margin-bottom: 50px;
+}
+.icon {
+	color: #333;
+	font-size: 40px;
+}
+/* ------sns ここまで----- */
+
+
+
+
+/* pagetop tag */
+.pagetop {
+	display: none;
+	position: fixed;
+	bottom: 45px;
+	right: 0px;
+}
+.pagetop a {
+	display: block;
+	background-color: #ccc;
+	text-align: center;
+	color: #fff;
+	font-size: 15px;
+	text-decoration: none;
+	padding: 20px 20px;
+	filter:alpha(opacity=50);
+	-moz-opacity: 0.5;
+	opacity: 0.5;
+	border-radius: 10px 0 0 10px;
+}
+.pagetop a:hover {
+	display: block;
+	background-color: #222;
+	text-align: center;
+	color: #fff;
+	font-size: 15px;
+	text-decoration: none;
+	padding:20px 20px;
+	filter:alpha(opacity=50);
+	-moz-opacity: 0.5;
+	opacity: 0.5;
+	border-radius: 10px 0 0 10px;
+}
+/* -----pagetop tag ここまで----- */
+
+
+
 
 /* footer */
-.footer {
+#footer {
 	width: 100%;
 	height: 30px;
 	background-color: #FFF;
 }
-.footer p {
-	font-size: 10px;
+#footer p {
+	font-size: 15px;
+	font-family: Times New Roman;
 	text-align: center;
 	font-weight: bold;
+	letter-spacing: 0.2em;
 }
-
+/* ----footer ここまで-----*/
 
 
 
