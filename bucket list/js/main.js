@@ -76,12 +76,6 @@ function addDream(task_text){
 	i_remove.classList.add('fa-trash-alt');
 	i_remove.classList.add('fa-lg');
 
-	// done用iタグを追加
-	let i_done = document.createElement('i');
-	i_done.classList.add('far');
-	i_done.classList.add('fa-check-circle');
-	i_done.classList.add('fa-lg');
-
 	// removeの処理
 	i_remove.addEventListener('click',function(){
 		let hantei = confirm('あなたはこの夢を諦めますか？');
@@ -95,12 +89,29 @@ function addDream(task_text){
 			localStorage.setItem('bucketList',JSON.stringify(data));
 		}
 	});
+
+	// done用iタグを追加
+	let i_done = document.createElement('i');
+	i_done.classList.add('far');
+	i_done.classList.add('fa-check-circle');
+	i_done.classList.add('fa-lg');
+
+	// doneの処理
+	i_done.addEventListener('click',function(){
+		let done_dream = document.querySelector('.done-dream');
+		done_dream.appendChild(eachList);
+		console.log(done_dream);
+	});
+
+
 		// 生成したiタグを親要素divbuttonsに追加
 		buttons.appendChild(i_remove);
 		buttons.appendChild(i_done);
 		eachList.appendChild(buttons);
 		not_yet.appendChild(eachList);
 }
+
+
 
 
 
