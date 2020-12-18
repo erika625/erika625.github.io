@@ -1,0 +1,197 @@
+body {
+	width: 100%;
+	text-align: center;
+	font-family: serif;
+}
+
+
+/* ----- iconbar ----- */
+/* .icon{
+    position: fixed;
+    left: 50px;
+	top: 100px;
+	z-index: 2;
+}
+.icon p{
+     margin-bottom: 50px;
+     font-size: 45px;
+     justify-content: center;
+}
+.icon a{
+	color: cornflowerblue;
+} */
+
+/* ----- navbar ----- */
+.nav-flex-icons{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.navbar {
+	padding-left: 20px;
+}
+.navbar li {
+	margin: 0 10px;
+	padding-top: 3px;
+}
+.navbar .btn {
+	margin-top: 3px;
+}
+/* #flex {
+	margin: 100px auto;
+} */
+
+/* ----- toppage ----- */
+#home {
+	top: 56px;
+}
+.toppage-bg {
+	background-image: url("../img/img_course_spot-04.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100vh;
+}
+.toppage {
+	background-color: rgba(0,0,0,0.4);
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
+h1 {
+	margin: 0 80px 0 auto;
+	color: rgba(255,255,255,0.9);
+	font-size: 50px;
+	letter-spacing: 0.5em;
+}
+
+
+/* ----- introduce ----- */
+.introduce {
+	margin-top: 200px;
+	margin-bottom: 200px
+}
+.title{
+	font-family: "Cardo", serif;
+	font-size: 70px;
+    line-height: 1.7;
+    letter-spacing: 0.06em;
+    text-align: center;
+}
+.para{
+	font-family: "Cardo", serif;
+    font-style: italic;
+    font-size: 20px;
+    padding-top: 30px;
+    letter-spacing: 0.2em;
+    text-align: center;
+}
+
+
+/* ----- content ----- */
+/* .slide {
+	width: 500px;
+	height: 300px;
+} */
+h4 {
+	font-size: 25px;
+	font-weight: bold;
+}
+#flex p {
+	line-height: 2.3em;
+	text-align: left;
+}
+
+
+
+/* ----- map ----- */
+#google-map {
+	height: 400px;
+	width: 600px;
+	margin: 0 auto;
+}
+
+
+/*----- activity ---- */
+.plan {
+	font-size: 38px;
+	margin-top: 150px;
+	margin-bottom: 50px;
+	padding-bottom: 10px;
+	border-bottom: 1px double;
+	letter-spacing: 0.1em;
+}
+/* .plan-title {
+	font-size: 25px;
+	margin-bottom:10px;
+} */
+.detail {
+	letter-spacing: 0.02em;
+    line-height: 1.5;
+}
+.pic {
+	width: 300px;
+	height: 300px;
+}
+
+/* ----- video ----- */
+.video{
+	margin: 100px auto;
+	max-width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+}
+
+/* ----- pagetop ----- */
+.page-top{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	font-size: 45px;
+}
+.page-top a{
+	color: #4e6f91;
+}
+
+
+/* ----- footer ----- */
+.footer{
+	text-align: center;
+	font-size: 17px;
+	font-family: "Cardo", serif;
+	font-style: italic;
+	margin-top: 50px;
+	margin-bottom: 10px;
+}
+
+@media screen and (max-width: 500px) {
+	h1 {
+		writing-mode: vertical-rl;
+		margin: 0 auto;
+	}
+	.introduce {
+		margin-bottom: 20px;
+	}
+	.introduce .phrase .title {
+		font-size: 28px;
+	}
+	.introduce .phrase .para {
+		font-size: 12px;
+		letter-spacing: 0.1em;
+	}
+	.video {
+		margin: 50px auto;
+	}
+	.plan {
+		font-size: 24px;
+		margin-bottom: 20px;
+	}
+	h4 {
+		font-size: 20px;
+	}
+	#flex p {
+		font-size: 14px;
+	}
+}

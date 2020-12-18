@@ -420,7 +420,8 @@
 /* iphoneX対応 */
 @media screen and (max-width: 480px) {
 	#header {
-		height: 0px;
+		display: block;
+		height: 50px;
 	}
 	#topphoto{
 		width: 100%;

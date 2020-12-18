@@ -1,0 +1,366 @@
+#search {
+    display: none;
+}
+
+
+/* 制作途中のため上記いったん非表示 */
+
+
+/* 全体のスタイル */
+body {
+    padding-top: 80px;
+    color: #132f5a;
+    width: 100%;
+    font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", serif;
+}
+
+
+/* header */
+#mainHeader {
+    background-color: #ffffff;
+}
+.nav-link {
+    color: #132f5a;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#132f5a' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
+/* snsicon */
+#snsicon{
+    position: fixed;
+    left: 2%;
+	top: 80%;
+	z-index: 10;
+}
+#snsicon li {
+     font-size: 20px;
+     justify-content: center;
+     margin-bottom: 5px;
+}
+#snsicon li a{
+    color: #132f5a;
+    /* border: 0.01rem solid #132f5a; */
+    /* border-radius: 50%; */
+}
+
+/* スクロールボタン */
+.scroll {
+    display: inline-block;
+    position: absolute;
+    left: 5%;
+    bottom: 0;
+    z-index: 2;
+    padding: 10px 10px 90px;
+    overflow: hidden;
+    color: #132f5a;
+    font-size: 14px;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 1;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    writing-mode: vertical-lr;
+}
+a:hover {
+    text-decoration: none;
+}
+.scroll::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    height: 30px;
+    background: #132f5a;
+    animation: sdl 1.5s ease infinite;
+}
+@keyframes sdl {
+  0% {
+    transform: translateY(-60px);
+  }
+  50%, 100% {
+    transform: translateY(30px);
+  }
+}
+
+
+
+/* toppage */
+.mainvisual {
+    position: relative;
+    text-align: right;
+    width: 100%;
+    margin-bottom: 150px;
+}
+.mainvisual_img {
+    width: 80%;
+}
+.mainvisual p {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    font-size: 50px;
+    font-weight: bold;
+    color: #132f5a;
+    text-shadow: 4px 4px 1px #ffffff;
+}
+
+/* 想い */
+#concept {
+    padding-top: 120px;
+}
+/* #concept button {
+
+} */
+
+/* 効果 */
+.contents_title {
+	font-size: 38px;
+	margin-top: 200px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+	letter-spacing: 0.1em;
+}
+.contents_title_right {
+    text-align: right;
+    padding-right: 100px;
+}
+.title_line {
+    width: 600px;
+    border-top: 1px solid;
+    margin-bottom: 100px;
+}
+.title_line_right {
+    margin-left: auto;
+    margin-right: 0;
+}
+.container h4 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.container p {
+    line-height: 1.7rem;
+}
+.contents2_img{
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* お届け */
+.contents {
+    width: 100%;
+    height: 550px;
+    margin-bottom: 200px;
+}
+.contents_img {
+    position: absolute;
+    z-index: 1;
+    left: 5%;
+    width: 50%;
+}
+.contents_text, .contents_text_right {
+    position: absolute;
+    z-index: 2;
+    right: 5%;
+    background-color: rgba(230, 230, 230, 0.5);
+    height: 500px;
+    width: 700px;
+    margin-top: 50px;
+    padding: 60px 150px;
+    line-height: 1.5rem;
+}
+.contents_text {
+    right: 5%;
+}
+.contents_text_right {
+    left: 5%;
+}
+.contents_text h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.contents_img_right {
+    position: absolute;
+    z-index: 1;
+    right: 5%;
+    width: 50%;
+}
+
+/* recipe */
+.pic {
+	width: 300px;
+    height: auto;
+}
+
+
+/* news */
+.news{
+    width: 600px;
+    margin: 0 auto;
+}
+
+/* よくある質問 */
+.contents_title2 {
+    width: 600px;
+    margin: 0 auto;
+    font-size: 38px;
+	margin-top: 150px;
+	margin-bottom: 50px;
+	padding-bottom: 10px;
+	border-bottom: 1px double;
+	letter-spacing: 0.1em;
+}
+.accordion{
+    width: 600px;
+    margin: 0 auto;
+}
+
+/* footerここから */
+hr{
+    height: 1px;
+    border: none;
+    border-top: 1px rgb(210,173,18) solid;
+    margin-top: 100px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 100px;
+}
+.icon{
+    margin-left: 100px;
+}
+
+
+@media screen and (max-width: 896px) {
+    #snsicon {
+        left: 1%;
+        top: 90%;
+    }
+    .scroll {
+        left: 1%;
+        bottom: 10%;
+        padding-left: 8px;
+    }
+    .scroll::after {
+        height: 20px;
+    }
+    .mainvisual_img {
+        width: 100%;
+    }
+    .mainvisual p {
+        color: #ffffff;
+        text-shadow: 4px 4px 2px #132f5a;
+    }
+    .title_line {
+        margin-bottom: 20px;
+    }
+    #concept {
+        padding-top: 0;
+    }
+    .contents {
+        height: 700px;
+    }
+    .contents_img {
+        position: relative;
+        z-index: 0;
+        width: 90%;
+        right: 5%;
+    }
+    .contents_text {
+        position: relative;
+        z-index: 0;
+        width: 90%;
+        left: 5%;
+        margin-bottom: 100px;
+        padding: 60px 50px;
+    }
+    .contents_img_right {
+        position: relative;
+        z-index: 0;
+        width: 90%;
+        left: 5%;
+    }
+    .contents_text_right {
+        position: relative;
+        z-index: 0;
+        width: 90%;
+        right: 5%;
+        padding: 60px 50px;
+    }
+    .container h4 {
+        font-size: 24px;
+    }
+    .contents_title {
+        margin-top: 100px;
+    }
+
+}
+
+/* スマフォ用 */
+@media screen and (max-width: 480px) {
+    body {
+        min-width: 375px;
+    }
+    .mainvisual {
+        margin-bottom: 50px;
+    }
+    .mainvisual p {
+        font-size: 28px;
+        left: 5%;
+    }
+    .title_line {
+        width: 80%;
+        left: 10%;
+    }
+    #concept .contents_text {
+        height: 450px;
+    }
+    .contents_text, .contents_text_right {
+        height: 400px;
+    }
+    .contents {
+        margin-bottom: 0;
+    }
+    .contents h2, .contents_title, .contents_title_right{
+        font-size: 24px;
+        padding: 0;
+    }
+    .container h4 {
+        font-size: 20px;
+        margin-top: 40px;
+    }
+    .contents_title2 {
+        width: 80%;
+        margin: 0 auto;
+        font-size: 28px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding-bottom: 10px;
+        border-bottom: 1px double;
+        letter-spacing: 0.1em;
+    }
+    .news {
+        width: 80%;
+    }
+    .accordion {
+        width: 80%;
+    }
+    /* footer */
+    footer {
+        display: flex;
+        justify-content: center;
+        font-size: 8px;
+        margin-right: 0;
+    }
+    footer .icon {
+        display: none;
+    }
+}
+
+
+/* スマフォ版 レスポンシブ未完成 */

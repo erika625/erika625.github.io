@@ -4,11 +4,11 @@
 	<title>profile</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="reset.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet">
-	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-	<script type="text/javascript">
+<!-- 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+ -->	<script type="text/javascript">
 		$(function(){
 			var setImg = '#topphoto';
 			var fadeSpeed = 1600;
@@ -20,30 +20,23 @@
 			},switchDelay);
 		});
 	</script>
-	<script src="https://kit.fontawesome.com/88e5d9c02a.js" crossorigin="anonymous"></script>
-		<script>
-		$(document).ready(function() {
-			var pagetop = $('.pagetop');
-				$(window).scroll(function () {
-					if ($(this).scrollTop() > 100) {
-						pagetop.fadeIn();
-					} else {
-						pagetop.fadeOut();
-					}
-				});
-				pagetop.click(function () {
-					$('body, html').animate({ scrollTop: 0 }, 500);
-					return false;
-				});
-			});
-	</script>
 </head>
 <body>
-	<div id="header"></div>
+	<div id="header">
+		<div id="toggle" class="hamburger js-hamburger">
+			<span></span>
+		</div>
+		<div id="drower-bg"></div>
+		<ul class="drower js-drower">
+			<li class="js-about">About</li>
+			<li class="js-gallery">Gallery</li>
+			<li class="js-contact">Contact</li>
+		</ul>
+	</div>
 	<div id="topphoto">
-		<img src="IMG_6165.jpeg">
-		<img src="IMG_6144.jpeg">
-		<img src="DSC04664.jpeg">
+		<img src="img/IMG_6165.jpeg">
+		<img src="img/IMG_6144.jpeg">
+		<img src="img/DSC04664.jpeg">
 	</div>
 	<div id="topphoto-title">
 		<p>Be camera</p>
@@ -67,10 +60,10 @@
 		<h3 class="subtitle">- Gallery -</h3>
 		<div class="container">
 			<div class="left">
-				<img class="pic-left" src="IMG_3749.jpg">
+				<img class="pic-left" src="img/IMG_3749.jpg">
 			</div>
 			<div class="right">
-				<img class="pic-right" src="IMG_3750.jpg">
+				<img class="pic-right" src="img/IMG_3750.jpg">
 			</div>
 		</div>
 	</div>
@@ -102,5 +95,9 @@
 			<p>©︎Copyright 2020 Bieber All rights reserved.</p>
 	</div>
 	</div>
+	<script src="https://kit.fontawesome.com/88e5d9c02a.js" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/app.js"></script>
+
 </body>
 </html>

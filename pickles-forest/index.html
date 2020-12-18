@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<!-- link CSS -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/animation.css">
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.css">
+    <!-- font awesome --->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ピクルスの森 | FUMOTO</title>
+</head>
+<body>
+    <!-- header navbar -->
+    <header id="mainHeader" class="wrapper fixed-top">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#"><img src="img/FUMOTO_logo.png" alt="" style="width: 80px;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                <a class="nav-link" href="#">ピクルスの森とは<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">作り手の思い</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">ショップ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">お問い合わせ</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search"> -->
+                <button class="btn my-2 my-sm-0" type="submit"><i class="fas fa-shopping-bag"></i></button>
+                <button class="btn my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>                
+            </form>
+            </div>
+        </nav>
+    </header>
+
+    <!-- サイト内検索 -->
+    <!-- <div id="search">
+        <form id="x_itemSeachForm" class="itemSearch__form" action="//www.pickelsforest.jp/search" method="get" style="border-color: rgb(19, 47, 90);">
+            <input class="itemSearch__field crim" type="text" name="q" placeholder="SEARCH" value="">
+            <button class="btn" title="サイト内検索" onclick="$('#wrap-site-search').toggleClass('d-none').find('input').focus()"><i class="fas fa-search"></i></button>
+            <div id="wrap-site-search" class="form-inline d-none">
+              <input type="text" class="form-control" style="padding-right:40px;" placeholder="サイト内検索" onkeyup="if(event.keyCode===13)location.href=`https://www.google.com/search?q=site%3A${location.host}+${encodeURIComponent(event.currentTarget.value)}`">
+              <i class="fab fa-google text-muted" style="margin-left:-30px;"></i>
+            </div>
+        </form>
+    </div> -->
+    <!-- サイト内検索 ここまで -->
+
+    <!-- SNS icon -->
+    <ul id="snsicon" class="nav-flex-icons">
+        <li class="nav-item">
+            <a href="" class="nav-link p-2">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="https://www.instagram.com/fumoto2019/?hl=ja" class="nav-link p-2">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </li>
+    </ul>
+    <!-- SNS icon ここまで -->
+
+    <a class="scroll" href="#concept">Scroll</a>
+
+    <main>
+        <!-- toppage -->
+        <div class="mainvisual">
+            <img class="mainvisual_img" src="img/fruits-and-berries-platter-vegan-cuisine.jpg" alt="">
+            <p class="">大地の恵みで人生に彩りを</p>
+        </div>
+        <!-- toppage ここまで -->
+
+        <!-- ピクルスの森の想い -->
+        <div id="concept" class="contents">
+            <img class="contents_img" src="img/9bff40d3238e9153e7eaeccd602e9b87.JPG" alt="">                
+            <div class="contents_text">
+                <h2>ピクルスの森の想い</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <button type="button" class="btn btn-outline-dark">view more</button>
+            </div>
+        </div>
+        <!-- ピクルスの森の想い ここまで -->
+
+        <!-- ピクルスの効果 -->
+        <h3 class="contents_title">ピクルスの効果</h3>
+        <p class="title_line"></p>
+        <div class="container container-m">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>疲労回復</h4>
+                    <img class="contents2_img" src="img/smiling-young-woman-relax-lying-on-couch.jpg" alt="">
+                    <p>お酢の効果で良く耳にするのがこの「疲労回復」効果ではないでしょうか？お酢を主原料として使うピクルスにも、当然この効果は備わっています。これは、普段生活をしていると体には自然に乳酸やピルビン酸などの疲労物質が蓄されていきます。これらの疲労物質をピクルスの主成分である酢酸が分解してくれるのです。昔の人が疲れたら酢を食べる様にしていたのは科学的に実証された正しい方法だったんですね♪</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>血液サラサラ効果</h4>
+                    <img class="contents2_img" src="img/female-doctor-with-blood-in-tube.jpg" alt="">
+                    <p>ピクルスには、アラニン、ロイシンなどのアミノ酸が含まれています。このアミノ酸には、コレステロールが血管に溜まるのを防ぐ善玉コレステロールを増やす働きがあります。これがドロドロ血液の原因である中性脂肪やコレステロールを改善し、血液をサラサラにしてくれるのです。</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>ダイエット効果</h4>
+                    <img class="contents2_img" src="img/young-woman-with-beautiful-body-measure-tape.jpg" alt="">
+                    <p>ピクルスには体重を正常に保つようコントロールしてくれる効果があるのですが、これは体内の老廃物や有毒物質を取り除いてくれたり、アミノ酸が新陳代謝を高め体内に取り込んだ栄養分を消費するように働きかけるからです。そして、脂肪分解の役割を持つ酵素リパーゼを活性化させ、悪玉コレステロールを分解、さらに余分な栄養分を分解して蓄積されるのを防ぐ働きを持っているのです。</p>
+                </div>
+            </div>
+          </div>
+        <!-- ピクルスの効果 ここまで -->
+
+        <!-- ピクルスの森からお届け -->
+        <h3 class="contents_title  contents_title_right">ピクルスの森からお届け</h3>
+        <p class="title_line title_line_right"></p>
+        <div class="container">
+            <div class="contents">
+                <img class="contents_img_right" src="img/IMG_7181.JPG" alt="">                
+                <div class="contents_text_right">
+                    <h4>贈り物に彩りを</h4>
+                    <p>色鮮やかな果実がココロを踊らせます。お祝いの時はもちろんのこと、お酢は身体にも良い為、少し健康に気づかう入院時のお見舞いの品としても喜んでいただけるものを作りました。</p>
+                </div>
+            </div>
+            <div class="contents">
+                <img class="contents_img" src="img/IMG_7119.JPG" alt="">                
+                <div class="contents_text ">
+                    <h4>日常に彩りを</h4>
+                    <p>見た目も美しく食卓を彩ります。普段の朝食のヨーグルトに添えたり、お酒で割って楽しんだり、アイスと合わせればお子様にも喜ばれます。</p>
+                </div>
+            </div>
+        </div>
+        <!-- ピクルスの森からお届け ここまで -->
+
+        <!-- recipe -->
+        <h3 class="contents_title">レシピ</h3>
+        <p class="title_line"></p>
+        <div class="container container-m" id="plan">
+            <div class="row">
+                <div class="col-lg-4 my-3 img-hidden">
+                    <img src="img/71c83a2fd004dab30ae22658a8c31c3d.JPG" alt="img" class="pic img-fulied d-block w-100 my-4">
+                </div>
+                <div class="col-lg-4 my-3 img-hidden">
+                    <img src="img/844cf261528851a6be2e765c413bdeb9.JPG" alt="img" class="pic img-fulied d-block w-100 my-4">
+                </div>
+                <div class="col-lg-4 my-3 img-hidden">
+                    <img src="img/b8b7522b4b881a9f22e32a0a92384dc4.JPG" alt="img" class="pic img-fulied d-block w-100 my-4">
+                </div>
+            </div>
+        </div>
+        <!-- recipe ここまで -->
+
+        <!-- news -->
+        <div class="my-3 bg-white rounded news">
+            <h3 class="contents_title2">news</h3>
+            <!-- <h6 class="border-bottom border-gray pb-2 mb-0">Recent updates</h6> -->
+            <!-- <h6 class="border-bottom border-gray pb-2 mb-0">NEWS</h6> -->
+            <div class="media text-muted pt-3">
+                <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="mr-2 rounded">
+                <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                    <strong class="d-block text-gray-dark">国産生キウイピクルス出来ました</strong>
+                    <!-- Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. -->
+                    キウイの美味しい季節がやって来ました。甘みと酸味が程よくヨーグルトとの相性もGOOD。
+                </p>
+            </div>
+            <div class="media text-muted pt-3">
+                <img data-src="holder.js/32x32?theme=thumb&bg=e83e8c&fg=e83e8c&size=1" alt="" class="mr-2 rounded">
+                <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                    <strong class="d-block text-gray-dark">いちごの美味しい季節</strong>
+                    <!-- Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. -->
+                    すっかり冬景色となり、市場ではいちごを見かける機会が増えてきました。美味しさを瓶に詰め込みます。
+                </p>
+            </div>
+            <div class="media text-muted pt-3">
+                <img data-src="holder.js/32x32?theme=thumb&bg=6f42c1&fg=6f42c1&size=1" alt="" class="mr-2 rounded">
+                <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                    <strong class="d-block text-gray-dark">金柑ピクルスが人気</strong>
+                    <!-- Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. -->
+                    この時期は金柑ピクルスが人気です。金柑ピクルスはお酒との相性もGOOD!!レシピは<a href="">ご紹介！！</a>
+                </p>
+            </div>
+            <small class="d-block text-right mt-3">
+                <a href="#">view more</a>
+            </small>
+        </div>
+        <!-- news ここまで -->
+
+        <!-- アコーディオンここから -->
+        <!-- <span class="text-muted h6">よくある質問</span> -->
+        <div class="faq">
+            <h3 class="contents_title2">よくある質問</h3>
+            <div class="accordion" id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h6 class="mb-0">
+                            <a class="text-body d-block p-3 m-n3" data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="true" aria-controls="collapseOne">Q,どのくら日持ちしますか？</a>
+                        </h6>
+                    </div>
+                    <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">A,常温で6ヶ月は美味しくいただけます。</div>
+                    </div>
+               </div>
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingTwo"><h6 class="mb-0"><a class="collapsed text-body d-block p-3 m-n3" data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo"> Q,どこで購入できますか？ </a></h6></div>
+                    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion"><div class="card-body">オンラインショップと市内協力店でご購入いただけます</div></div>
+                </div>
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingThree"><h6 class="mb-0"><a class="collapsed text-body d-block p-3 m-n3" data-toggle="collapse" href="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseThree">Q,人気メニューを教えてください。</a></h6></div>
+                    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion"><div class="card-body">季節により異なりますが、レモン・いちご・金柑が人気です。</div></div>
+                </div>
+            </div>
+        </div>
+        <!-- アコーディオンここまで -->
+
+        <!-- footerここから -->
+        <hr>
+        <footer>
+            <!-- footer左側 -->
+            <div class="icon">
+                <img src="img/FUMOTO_logo.png" alt="" style="width: 80px;">
+                <img src="img/logo.png" alt="footerロゴ" style="width: 155px;">
+            </div>
+            <!-- footer右側 -->
+                <p class="footer-right">Copyright (C)FUMOTO</p>
+        </footer>  
+        <!-- footerここまで -->
+
+        <!-- page top scroller -->
+        <div id="page_top"><a href="#"></a></div>
+        <!-- page top scroller ここまで -->
+    </main>
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- js 読み込み -->
+	<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+// page top
+#t-scroll {
+    width: 960px;
+    text-align: right;
+    margin: 0 auto;
+    a {
+        color: #002356;
+        &:hover {
+            color: #5c6c7c;
+        }
+    }
+}
+
+
+
+// footer
+.footer {
+    text-align: center;
+    .footer_content {
+        width: 960px;
+        border-top: 1px double;
+        margin: 0 auto;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        padding-top: 10px;
+        ul {
+            display: flex;
+            li {
+                margin-right: 10px;
+                a {
+                    color: #002356;
+                    &:hover {
+                        color: #5c6c7c;
+                    }
+                }
+            }
+        }
+        p {
+            text-align: left;
+            margin-top: 20px;
+            font-size: 12px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 769px) {
+    #t-scroll {
+        width: 730px;
+    }
+    .footer {
+        .footer_content {
+            width: 730px;
+        }
+    }
+}
+
+/* iphoneX対応 */
+@media screen and (max-width: 480px) {
+    #t-scroll {
+        width: 310px;
+    }
+    .footer {
+        .footer_content {
+            width: 310px;
+        }
+    }
+}
